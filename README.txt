@@ -1,30 +1,30 @@
-Dimension by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+Kindertagespflege Eveline Muller — Website
+============================================
 
+Statische Website für die Kleinkinder-Tagespflege von Eveline Muller in
+Stuttgart-Büsnau. Reines HTML/CSS/JavaScript, kein Build-Schritt nötig —
+kann direkt per GitHub Pages (siehe .github/workflows/static.yml) oder
+jedem beliebigen statischen Webhost bereitgestellt werden.
 
-This is Dimension, a fun little one-pager with modal-ized (is that a word?) "pages"
-and a cool depth effect (click on a menu item to see what I mean). Simple, fully
-responsive, and kitted out with all the usual pre-styled elements you'd expect.
-Hope you dig it :)
+Struktur
+--------
+index.html         Startseite: Hero, Über mich, Konzept, Räumlichkeiten,
+                    Plätze/Warteliste, Öffnungszeiten, Kontaktformular
+impressum.html      Impressum (§ 5 TMG)
+datenschutz.html     Datenschutzerklärung
+css/style.css       Gesamtes Stylesheet (kinderfreundliche Farben, responsiv)
+js/script.js        Navigation, Scroll-Reveal, Formular-Validierung
+img/favicon.svg     Favicon
 
-Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
+Kontaktformular
+----------------
+Da es sich um eine rein statische Seite ohne Backend handelt, öffnet das
+Formular nach Validierung das E-Mail-Programm des Nutzers mit einer
+vorausgefüllten Nachricht an eveline.muller@gmx.de (mailto:-Link). Für einen
+serverseitigen Versand (z. B. über Formspree, Netlify Forms o. Ä.) muss das
+Formular in js/script.js entsprechend angebunden werden.
 
-(* = not included)
-
-AJ
-aj@lkn.io | @ajlkn
-
-
-Credits:
-
-	Demo Images:
-		Unsplash (unsplash.com)
-
-	Icons:
-		Font Awesome (fontawesome.io)
-
-	Other:
-		jQuery (jquery.com)
-		Responsive Tools (github.com/ajlkn/responsive-tools)
+Lokal ansehen
+--------------
+Einfach index.html im Browser öffnen, oder z. B.:
+	python3 -m http.server
