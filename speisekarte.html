@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Speisekarte · Akropolis Restaurant Krefeld</title>
+<meta name="description" content="Die komplette Speisekarte des Restaurant Akropolis in Krefeld: Vorspeisen, Salate, Grillspezialitäten, Fisch, Pfännchengerichte, Kinderkarte und Getränke." />
+<meta name="theme-color" content="#0e2140" />
+<link rel="icon" type="image/png" href="assets/img/favicon-32.png" />
+<link rel="apple-touch-icon" href="assets/img/logo-180.png" />
+<link rel="canonical" href="https://akropolis-lusbell.org/speisekarte.html" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+<a href="#menuContentTop" class="skip-link">Zum Inhalt springen</a>
+
+<div class="loader" id="loader"><img src="assets/img/logo.png" alt="" width="64" height="64" /></div>
+<div class="progress-bar" id="progressBar"></div>
+<div class="cursor is-hidden" id="cursor"><div class="cursor-dot"></div><div class="cursor-ring"></div></div>
+
+<header class="site-header hero-theme" id="siteHeader">
+  <div class="container header-inner">
+    <a href="index.html" class="brand">
+      <img src="assets/img/logo.png" class="brand-logo" alt="Akropolis Restaurant" width="46" height="46" />
+      <span class="brand-text">
+        <span class="brand-name">Akropolis</span>
+        <span class="brand-sub">Restaurant</span>
+      </span>
+    </a>
+
+    <nav class="main-nav" aria-label="Hauptnavigation">
+      <ul>
+        <li><a href="index.html#start" class="nav-link">Start</a></li>
+        <li><a href="index.html#ueber-uns" class="nav-link">Über uns</a></li>
+        <li><a href="speisekarte.html" class="nav-link active">Speisekarte</a></li>
+        <li><a href="index.html#galerie" class="nav-link">Galerie</a></li>
+        <li><a href="index.html#bewertungen" class="nav-link">Bewertungen</a></li>
+        <li><a href="index.html#kontakt" class="nav-link">Kontakt</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <a href="tel:+4921514150923" class="btn btn-ghost header-phone">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M6.6 10.8c1.4 2.9 3.7 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.3 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1v3.5c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1L6.6 10.8Z"/></svg>
+        02151 4150923
+      </a>
+      <a href="index.html#kontakt" class="btn btn-primary magnetic">Tisch reservieren</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobileDrawer">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-drawer-backdrop" id="mobileDrawerBackdrop"></div>
+<aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobile Navigation">
+  <button class="drawer-close" id="drawerClose" aria-label="Menü schließen">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 5l14 14M19 5L5 19"/></svg>
+  </button>
+  <nav class="drawer-nav">
+    <a href="index.html#start">Start <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 5l7 7-7 7"/></svg></a>
+    <a href="index.html#ueber-uns">Über uns <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 5l7 7-7 7"/></svg></a>
+    <a href="speisekarte.html">Speisekarte <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 5l7 7-7 7"/></svg></a>
+    <a href="index.html#galerie">Galerie <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 5l7 7-7 7"/></svg></a>
+    <a href="index.html#bewertungen">Bewertungen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 5l7 7-7 7"/></svg></a>
+    <a href="index.html#kontakt">Kontakt <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 5l7 7-7 7"/></svg></a>
+  </nav>
+  <div class="drawer-actions">
+    <a href="index.html#kontakt" class="btn btn-primary btn-block">Tisch reservieren</a>
+    <a href="tel:+4921514150923" class="btn btn-outline btn-block">Anrufen · 02151 4150923</a>
+  </div>
+  <div class="drawer-meta">
+    <span>Nieperstr. 242, 47802 Krefeld</span>
+    <a href="mailto:service@akropolis-lusbell.org">service@akropolis-lusbell.org</a>
+    <span>Di–Fr 15–23 · Sa 12–23 · So 12–21:30</span>
+  </div>
+  <div class="drawer-social">
+    <a href="https://www.instagram.com/akropolis.lusbell.krefeld/" target="_blank" rel="noopener" aria-label="Instagram">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1"/></svg>
+    </a>
+  </div>
+</aside>
+
+<main>
+  <section class="menu-hero">
+    <div class="container">
+      <a href="index.html" class="menu-hero-back reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+        Zurück zur Startseite
+      </a>
+      <div class="eyebrow reveal" style="justify-content:center">Griechische Gastlichkeit</div>
+      <h1 class="reveal">Unsere Speisekarte</h1>
+      <p class="reveal">Über 100 Gerichte &mdash; von hausgemachten Mezes bis zur großen Grillplatte. Nutzen Sie die Suche oder springen Sie direkt zu einer Kategorie.</p>
+    </div>
+  </section>
+
+  <div id="menuToolbar" class="menu-toolbar">
+    <div class="container menu-toolbar-inner">
+      <div class="menu-search" id="menuSearchWrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+        <input type="search" id="menuSearch" placeholder="Gericht suchen, z. B. Gyros&hellip;" aria-label="Speisekarte durchsuchen" />
+        <button class="menu-search-clear" id="menuSearchClear" aria-label="Suche zurücksetzen" type="button">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 5l14 14M19 5L5 19"/></svg>
+        </button>
+      </div>
+      <div class="menu-groups">
+        <button class="menu-group-btn is-active" data-group="food" type="button">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M7 2v20M7 2a3 3 0 0 0-3 3v4a3 3 0 0 0 3 3M17 2v20M17 2a4 4 0 0 0-4 4v6h8"/></svg>
+          Essen
+        </button>
+        <button class="menu-group-btn" data-group="drinks" type="button">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2h8l-1.5 9a2.5 2.5 0 0 1-2.5 2h0a2.5 2.5 0 0 1-2.5-2L8 2ZM12 13v9M8 22h8"/></svg>
+          Getränke
+        </button>
+      </div>
+    </div>
+    <div class="container" style="margin-top:.9rem;">
+      <div class="menu-pills" id="menuPills"></div>
+    </div>
+  </div>
+
+  <div id="menuContentTop"></div>
+  <section class="menu-content">
+    <div class="container">
+      <div id="menuContent"></div>
+      <div class="menu-empty" id="menuEmpty" style="display:none;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+        <p>Kein Gericht gefunden. Versuchen Sie einen anderen Suchbegriff.</p>
+      </div>
+
+      <div class="menu-legend reveal">
+        <span><b>Hinweis:</b> Alle Preise inkl. MwSt.</span>
+        <span>Informationen zu Zusatzstoffen &amp; Allergenen erhalten Sie gerne von unserem Serviceteam.</span>
+        <span>Beilagenänderungen bei einigen Gerichten gegen Aufpreis möglich.</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="menu-cta section-navy">
+    <div class="container">
+      <div class="section-head center">
+        <div class="eyebrow">Appetit bekommen?</div>
+        <h2 class="section-title">Reservieren Sie jetzt Ihren Tisch</h2>
+      </div>
+      <div class="hero-actions" style="justify-content:center;display:flex;flex-wrap:wrap;gap:1rem;">
+        <a href="tel:+4921514150923" class="btn btn-primary btn-lg magnetic">Jetzt anrufen &middot; 02151 4150923</a>
+        <a href="index.html#kontakt" class="btn btn-outline btn-lg magnetic">Kontakt &amp; Anfahrt</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <img src="assets/img/logo.png" class="brand-logo" alt="Akropolis Restaurant" width="46" height="46" />
+          <span class="brand-text">
+            <span class="brand-name">Akropolis</span>
+            <span class="brand-sub">Restaurant</span>
+          </span>
+        </a>
+        <p class="footer-tagline">Griechische Gastlichkeit bei Lus Bell &mdash; Nieperstr. 242, 47802 Krefeld.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/akropolis.lusbell.krefeld/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1"/></svg>
+          </a>
+          <a href="tel:+4921514150923" aria-label="Anrufen">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M6.6 10.8c1.4 2.9 3.7 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.3 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1v3.5c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1L6.6 10.8Z"/></svg>
+          </a>
+          <a href="mailto:service@akropolis-lusbell.org" aria-label="E-Mail schreiben">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="m4 5 8 7 8-7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html#start">Start</a></li>
+            <li><a href="index.html#ueber-uns">Über uns</a></li>
+            <li><a href="speisekarte.html">Speisekarte</a></li>
+            <li><a href="index.html#galerie">Galerie</a></li>
+            <li><a href="index.html#bewertungen">Bewertungen</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Kontakt</h4>
+          <ul>
+            <li><a href="tel:+4921514150923">02151 4150923</a></li>
+            <li><a href="mailto:service@akropolis-lusbell.org">service@akropolis-lusbell.org</a></li>
+            <li><a href="https://www.google.com/maps/search/?api=1&query=Restaurant+Akropolis+Nieperstr.+242+47802+Krefeld" target="_blank" rel="noopener">Nieperstr. 242, Krefeld</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Öffnungszeiten</h4>
+          <ul>
+            <li>Montag &mdash; Ruhetag</li>
+            <li>Di &ndash; Fr &mdash; 15:00 &ndash; 23:00</li>
+            <li>Sa &mdash; 12:00 &ndash; 23:00</li>
+            <li>So &mdash; 12:00 &ndash; 21:30</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>&copy; <span data-year>2026</span> Restaurant Akropolis, Krefeld. Alle Rechte vorbehalten.</span>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Nach oben scrollen">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script src="assets/vendor/lenis.min.js" defer></script>
+<script src="assets/vendor/gsap.min.js" defer></script>
+<script src="assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="assets/data/menu-data.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+<script src="assets/js/animations.js" defer></script>
+<script src="assets/js/menu-page.js" defer></script>
+</body>
+</html>
