@@ -375,7 +375,7 @@
 			const subject = encodeURIComponent("Anfrage über die Website — " + name);
 			const body = encodeURIComponent(`Name: ${name}\nE-Mail: ${email}${phone}${service}\n\nNachricht:\n${message}`);
 
-			window.location.href = `mailto:garten.rehman@gmail.com?subject=${subject}&body=${body}`;
+			window.location.href = `mailto:gartenpflege.rehman@gmail.com?subject=${subject}&body=${body}`;
 
 			formNote.classList.remove("is-error");
 			formNote.textContent = "Ihr E-Mail-Programm öffnet sich mit Ihrer vorausgefüllten Nachricht.";
