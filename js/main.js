@@ -47,12 +47,14 @@
 		navToggle.setAttribute("aria-expanded", "false");
 		mobileNav.classList.remove("is-open");
 		mobileNav.setAttribute("aria-hidden", "true");
+		header.classList.remove("nav-open");
 		document.body.style.overflow = "";
 	}
 	function openMobileNav() {
 		navToggle.setAttribute("aria-expanded", "true");
 		mobileNav.classList.add("is-open");
 		mobileNav.setAttribute("aria-hidden", "false");
+		header.classList.add("nav-open");
 		document.body.style.overflow = "hidden";
 	}
 	navToggle.addEventListener("click", () => {
