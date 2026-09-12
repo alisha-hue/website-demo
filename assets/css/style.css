@@ -346,6 +346,15 @@ body.nav-open .mobile-nav a{ opacity:1; transform:translateY(0); }
 .hero__eyebrow span{
   color:var(--sage-300); font-size:.78rem; letter-spacing:.16em; text-transform:uppercase; font-weight:600;
 }
+.hero__rating{
+  margin-top:20px; display:inline-flex; align-items:center; gap:9px;
+  padding:9px 16px; border-radius:100px;
+  background:rgba(250,247,238,.08); border:1px solid var(--line-light);
+  color:var(--cream-100); font-size:.85rem; transition:background-color .3s ease, transform .3s ease;
+}
+.hero__rating:hover{ background:rgba(250,247,238,.14); transform:translateY(-2px); }
+.hero__rating-stars{ color:var(--gold-400); letter-spacing:1px; font-size:.8rem; }
+.hero__rating strong{ font-family:var(--font-display); color:var(--cream-050); }
 .hero__title{
   margin-top:22px;
   font-family:var(--font-display); font-weight:500;
@@ -522,6 +531,12 @@ body.nav-open .mobile-nav a{ opacity:1; transform:translateY(0); }
 }
 .testimonial-card__author strong{ display:block; font-size:.95rem; color:var(--forest-900); }
 .testimonial-card__author span{ font-size:.8rem; color:var(--ink-700); }
+.testimonial-card--summary{
+  align-items:flex-start; justify-content:center;
+  background:linear-gradient(160deg, rgba(143,174,85,.12), rgba(201,161,90,.08));
+}
+.testimonial-card__summary-text{ font-family:var(--font-display); font-size:1.15rem; color:var(--forest-900); margin:0; }
+.testimonial-card--summary .btn{ margin-top:auto; }
 .testimonial-dots{ display:none; justify-content:center; gap:8px; margin-top:28px; }
 .testimonial-dots button{ width:8px; height:8px; border-radius:50%; background:var(--line); }
 .testimonial-dots button.is-active{ background:var(--sage-500); width:22px; border-radius:5px; transition:width .3s ease; }
@@ -543,6 +558,14 @@ body.nav-open .mobile-nav a{ opacity:1; transform:translateY(0); }
 }
 .contact__method svg{ color:var(--gold-400); }
 .contact__method:hover{ background:rgba(250,247,238,.08); }
+
+.contact__hours{
+  margin-top:28px; padding-top:24px; border-top:1px solid var(--line-light);
+  display:flex; gap:36px; flex-wrap:wrap;
+}
+.contact__hours div{ display:flex; flex-direction:column; gap:4px; }
+.contact__hours dt{ font-size:.75rem; letter-spacing:.08em; text-transform:uppercase; color:var(--sage-300); }
+.contact__hours dd{ margin:0; font-family:var(--font-display); font-size:1.1rem; color:var(--cream-050); }
 
 .contact__form{
   background:rgba(250,247,238,.06); border:1px solid var(--line-light); border-radius:var(--radius-lg);
